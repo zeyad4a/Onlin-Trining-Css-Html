@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Log-In </title>
+    <link rel="stylesheet" href="../Css/Login-style.css">
+    <link rel="stylesheet" href="../Css/font.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="logo"><a href="../index.html"><img id="top" src="../Photo/gym-removebg.png" width="160px"></a></div>
+    <div class="wellcome">
+        <h2>Welcome in our Website</h2>
+        <h3>We Care About You</h3>
+        <h4>Let’s Start</h4>
+    </div>
+    <div class="container">
+        <form action="Training.html" target="_blank">
+            <div class="username">
+                <label for="z1">Name: </label>
+                <input type="text" id="z1" placeholder="Your Name.." required><br>
+            </div>
+            <div class="num">
+                <label for="n1">Number Phone:</label>
+                <input id="n1" type="tel" placeholder="+20[1234567891]" required maxlength="11" minlength="11">
+            </div>
+            <div class="e-mail">
+                <label for="e1">E-Mail Address:</label>
+                <input type="email" id="e1" placeholder="example@examle.com" required><br>
+            </div>
+            <div class="gender">
+                <label>Gender:</label>
+                <label for="m">Male</label>
+                <input id="m" name="gender" type="radio">
+                <label for="f">Female</label>
+                <input id="f" name="gender" type="radio">
+            </div>
+            <div class="age">
+                <label for="ag1">Age: </label>
+                <input id="ag1" type="number">
+            </div>
+            <div class="goal">
+                <label for="g1">Your goal of following up: </label>
+                <input id="g1" type="text" required>
+            </div>
+            <div class="injuries">
+                <label for="inj1">Are there any injuries, operations, or any chronic diseases?</label>
+                <label id="inj1" for="y">Yes</label>
+                <input id="y" name="ingu" type="radio">
+                <label id="inj1" for="n">No</label>
+                <input id="n" name="ingu" type="radio">
+            </div>
+            <div class="activity">
+                <label for="activ">What is your daily activity level?</label>
+                <select id="activ">
+                    <option>Select</option>
+                    <option>High</option>
+                    <option>Medium</option>
+                    <option>Low</option>
+                </select>
+            </div>
+            <div class="t-gy">
+                <label for="gym">What time do you usually go to Gym?</label>
+                <select id="gym">
+                    <option>Select</option>
+                    <option>10:000 am to 3:00 pm</option>
+                    <option>4:00 pm to 8:00 pm</option>
+                    <option>8:00 pm to 12:00 am</option>
+                </select>
+            </div>
+            <div class="t-sleep">
+                <label for="sleep">What time do you usually go to sleep?</label>
+                <select id="sleep">
+                    <option>Select</option>
+                    <option>10:000 am to 12:00 am</option>
+                    <option>1:00 am to 3:00 am</option>
+                    <option>4:00 am to 12:00 am</option>
+                </select>
+            </div>
+            <div class="upload">
+                <label for="imge-up">Upload Your Body Shape Before training</label>
+                <input id="imge-up" type="file" required>
+            </div>
+            <div class="join-4">
+                <input type="submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

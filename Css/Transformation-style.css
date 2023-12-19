@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: .5s;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+}
+
+::selection {
+    background-color: black;
+    color: whitesmoke;
+}
+
+body {
+    background-image: url(https://i.pinimg.com/originals/9e/29/69/9e2969383f4cb048eac9530055961ddc.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: azure;
+    margin: 0;
+    padding: 0;
+}
+
+.contenar-head {
+    text-align: center;
+}
+
+header {
+    border-radius: 0 0 30px 30px;
+    /*height: 120px;*/
+    background-color: rgb(0, 0, 0, 65%);
+    box-shadow: 10px 10px 80px rgb(12, 14, 11) inset;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-border-radius: 0 0 30px 30px;
+    -moz-border-radius: 0 0 30px 30px;
+    -ms-border-radius: 0 0 30px 30px;
+    -o-border-radius: 0 0 30px 30px;
+}
+
+header .logo img {
+    width: 130px;
+}
+
+header ul {
+    list-style: none;
+    font-size: larger;
+    font-weight: bolder;
+    display: flex;
+    gap: 30px;
+}
+
+header ul li {
+    padding: 20px;
+}
+
+header ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+header ul li:hover {
+    padding-top: 5px;
+    border-bottom: 1px solid whitesmoke;
+}
+@media (max-width: 991px) {
+    header ul li a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    header .logo img {
+        width: 80px;
+    }
+
+    header ul {
+        gap: 20px;
+    }
+
+    header ul li {
+        padding: 0 0 5px 5px;
+    }
+}
+
+@media (max-width: 570px) {
+
+    header .logo img {
+        width: 60px;
+    }
+
+    header ul li {
+        padding: 0 0 5px 5px;
+    }
+
+    header ul {
+        gap: 8px;
+        padding: 0;
+    }
+
+    header ul li:last-child {
+        border-width: 2px;
+    }
+
+    header ul li a {
+        font-size: 10px;
+    }
+}
+
+.succsess {
+    text-align: center;
+    color: rgb(218, 218, 218);
+    /* transform: translateY(-70px); */
+    text-shadow: 2px 3px 5px rgb(67, 89, 117);
+    font-size: x-large;
+    padding: 30px 0;
+}
+
+.succsess h3 {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+@media (max-width: 570px) {
+    .succsess {
+        font-size: large;
+    }
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 30px;
+}
+
+.container img {
+    transition: .5s;
+    border-radius: 10%;
+    width: 300px;
+}
+
+.container img:hover {
+    transform: scale(1.1,1.1);
+    box-shadow: 0 5px 15px rgb(255, 255, 255);
+}
+
+.button {
+    box-shadow: 20px 20px 20px red outset;
+    position: relative;
+    bottom: -24px;
+    width: 315px;
+    height: 47px;
+    margin: 20px 0 50px;
+    background-color: #161616;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.button:hover {
+    box-shadow: 0 5px 25px rgb(255, 255, 255);
+    transform: scale(1.1,1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.back-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    border-radius: 40%;
+    opacity: 50%;
+}
+.back-top a {
+    text-decoration: none;
+    color: white;
+}
+.back-top:hover {
+    opacity: 100%;
+}
+
+/* 
+li::after {
+    content: "";
+    width: 4px;
+    height: 100px;
+    background-color: rgb(241, 241, 241);
+    position: absolute;
+    left: 1165px;
+    top: 17px;
+    border-radius: 30px;
+}
+
+
+.nav-list li {
+    margin: 15px;
+    transform: translate(-190px, -115px);
+}
+
+.utility-list li {
+    transform: translate(-70px, -172px);
+}
+
+.logo {
+    margin-left: 15px;
+    cursor: pointer;
+}
+} */

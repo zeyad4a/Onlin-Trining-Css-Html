@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+}
+
+*::selection {
+    background-color: black;
+    color: whitesmoke;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: aliceblue;
+    background-image: url(https://i.pinimg.com/originals/03/a8/9d/03a89d47c0a0ffc3bcf4a78a07537763.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.wellcome {
+    text-align: center;
+    transform: translateY(200px);
+    -webkit-transform: translateY(200px);
+    -moz-transform: translateY(200px);
+    -ms-transform: translateY(200px);
+    -o-transform: translateY(200px);
+}
+
+.wellcome h3 {
+    margin: 20px 0;
+}
+
+.container {
+    width: fit-content;
+    /*height: 700px;
+    */
+    backdrop-filter: blur(2px);
+    border-radius: 15px;
+    border: 1px solid white;
+    padding: 15px;
+    margin: 40px auto;
+    opacity: 0.8;
+    transition: 0.5s;
+    position: absolute;
+    left: 50%;
+    top: 350px;
+    transform: translate(-50%, -50px);
+    -webkit-transform: translate(-50%, -50px);
+    -moz-transform: translate(-50%, -50px);
+    -ms-transform: translate(-50%, -50px);
+    -o-transform: translate(-50%, -50px);
+}
+
+.container:hover {
+    backdrop-filter: blur(8px);
+    opacity: 1;
+        box-shadow: 0px 0px 15px rgb(209, 209, 209)
+}
+
+.container div {
+    margin-bottom: 23px;
+}
+
+.container input,
+select {
+    color: rgb(0, 0, 0);
+    font-weight: 800px;
+    font-size: large;
+    border-radius: 13px;
+    outline: none;
+    border: 2px solid rgb(6, 5, 14);
+}
+
+.container label {
+    font-size: 18px;
+    font-weight: 150px;
+}
+
+
+.join-4 input {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    /*width: 115px;
+    height: 47px;
+    border-radius: 0.625em;
+    transform: translateX(222px);
+    */
+    border: none;
+    padding: 15px 20px;
+    margin: 0.5em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    transform: translateX(-61%);
+    -webkit-transform: translateX(-61%);
+    -moz-transform: translateX(-61%);
+    -ms-transform: translateX(-61%);
+    -o-transform: translateX(-61%);
+}
+
+.join-4 input:hover{
+    background-color:rgba(0, 0, 0, 0.356);
+        box-shadow: 0px 0px 15px rgb(209, 209, 209)
+}
+
+/* #z1 {
+    transform: translateX(70px);
+} */
+
+#ag1 {
+    width: 60px;
+}
+
+#imge-up {
+    width: 260px;
+}
